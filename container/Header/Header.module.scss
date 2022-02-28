@@ -1,6 +1,6 @@
 #home {
   position: relative;
-  background: url("../../assets/email.png");
+  background: url("../../assets/bgIMG.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -41,6 +41,11 @@
   justify-content: center;
   align-items: center;
   padding: 6rem 2rem 0rem;
+  position: relative;
+  background: url("../../assets/bgIMG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
