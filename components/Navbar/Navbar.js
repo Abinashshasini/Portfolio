@@ -20,7 +20,6 @@ const Navbar = () => {
             key={`link-${item}`}
             className="p-text"
           >
-            <div />
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}

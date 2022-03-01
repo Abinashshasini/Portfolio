@@ -183,12 +183,47 @@ a {
       color: var(--gray-color);
     }
 
-    &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+    &:nth-child(1) {
+      &:hover {
+        background-color: #1da1f2;
+        border-color: #1da1f2;
 
-      svg {
-        color: var(--white-color);
+        svg {
+          color: var(--white-color);
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      &:hover {
+        background-color: #3b5998;
+        border-color: #3b5998;
+
+        svg {
+          color: var(--white-color);
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      &:hover {
+        background-color: #0e76a8;
+        border-color: #0e76a8;
+
+        svg {
+          color: var(--white-color);
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      &:hover {
+        background-color: #333;
+        border-color: #333;
+
+        svg {
+          color: var(--white-color);
+        }
       }
     }
 

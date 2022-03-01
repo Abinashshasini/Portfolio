@@ -122,6 +122,6 @@ const Work = () => {
 
 export default AppWrap(
   MotionWrap(Work, styles.app__works),
-  "about",
+  "work",
   styles.app_primarybg
 );
