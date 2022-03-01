@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { About, Skills, Testimonial, Header, Footer, Work } from "../container";
+import { About, Skills, Header, Footer, Work } from "../container";
 import { Navbar } from "../components";
 import styles from "../styles/Home.module.scss";
 
@@ -19,8 +19,7 @@ export default function Home() {
         <About />
         <Work />
         <Skills />
-        {/* <Testimonial />
-        <Footer /> */}
+        <Footer />
       </div>
 
       <footer></footer>
