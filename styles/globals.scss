@@ -129,6 +129,28 @@ a {
   }
 }
 
+.head-text2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--black-color);
+  text-transform: capitalize;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  span {
+    color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
 .p-text {
   font-size: 0.8rem;
   text-align: left;

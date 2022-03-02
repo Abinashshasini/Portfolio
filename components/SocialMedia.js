@@ -6,7 +6,7 @@ import Link from "next/link";
 const SocialMedia = () => (
   <div className="app__social">
     <div>
-      <Link href="https://twitter.com/ShasiniAbinash">
+      <Link href={`https://twitter.com/ShasiniAbinash`}>
         <BsTwitter />
       </Link>
     </div>

@@ -42,22 +42,23 @@ const Footer = () => {
       .catch((err) => {
         setLoading(false);
         console.log(err);
+        setIsFormSubmitted(true);
       });
   };
   return (
     <>
-      <h2 className="head-text">Take a coffe & Chat with me</h2>
+      <h2 className="head-text">Contact me</h2>
       <div className={styles.app__footer_cards}>
         <div className={styles.app__footer_card}>
           <img src={images.email.src} alt="email" />
           <a href="mailto:abinashshasini125@gmail.com" className="p-text">
-            hello@micael.com
+            abinashshasini125@gmail.com
           </a>
         </div>
         <div className={styles.app__footer_card}>
           <img src={images.mobile.src} alt="phone" />
-          <a href="tel:7749012570" className="p-text">
-            7749012570
+          <a href="tel:+91 7749012570" className="p-text">
+            +91 7749012570
           </a>
         </div>
       </div>
@@ -98,7 +99,7 @@ const Footer = () => {
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you for getting in touch!</h3>
+          <h3 className="head-text2">🙏🏻 Thank you for getting in touch 😊</h3>
         </div>
       )}
     </>

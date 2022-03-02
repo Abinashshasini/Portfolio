@@ -9,7 +9,7 @@ import styles from "./Skills.module.scss";
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
-  console.log("experiences: ", experiences);
+
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
@@ -47,10 +47,10 @@ const Skills = () => {
           ))}
         </motion.div>
         <div className={styles.app__skills_exp}>
-          {experiences.map((experience) => (
+          {experiences?.map((experience, index) => (
             <motion.div
               className={styles.app__skills_exp_item}
-              key={experience.year}
+              key={experience.year + index}
             >
               <div className={styles.app__skills_exp_year}>
                 <p className="bold-text">{experience.year}</p>

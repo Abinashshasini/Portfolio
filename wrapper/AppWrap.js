@@ -10,8 +10,12 @@ const AppWrap = (Component, idName, classNames) =>
           <Component />
 
           <div className="copyright">
-            <p className="p-text">@{new Date().getFullYear()} Abinash</p>
-            <p className="p-text">All rights reserved</p>
+            <p className="p-text" style={{ textTransform: "capitalize" }}>
+              Copy right @ {new Date().getFullYear()}
+            </p>
+            <p className="p-text" style={{ textTransform: "none" }}>
+              Abinash All rights reserved
+            </p>
           </div>
         </div>
         <NavigationDots active={idName} />
