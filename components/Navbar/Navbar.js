@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 
 import { images } from "../../constants";
 import styles from "./Navbar.module.scss";
+import { BsTwitter, BsLinkedin, BsGithub } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+import Link from "next/link";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);

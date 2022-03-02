@@ -8,15 +8,6 @@ const AppWrap = (Component, idName, classNames) =>
         <SocialMedia />
         <div className="app__wrapper app__flex">
           <Component />
-
-          <div className="copyright">
-            <p className="p-text" style={{ textTransform: "capitalize" }}>
-              Copy right @ {new Date().getFullYear()}
-            </p>
-            <p className="p-text" style={{ textTransform: "none" }}>
-              Abinash All rights reserved
-            </p>
-          </div>
         </div>
         <NavigationDots active={idName} />
       </div>

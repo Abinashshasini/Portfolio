@@ -1,53 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { client } from "../../client";
+import Link from "next/link";
+import { BsTwitter, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
 
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  const { username, email, message } = formData;
-
-  const handleChangeInput = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = () => {
-    setLoading(true);
-
-    const contact = {
-      _type: "contact",
-      name: username,
-      email: email,
-      message: message,
-    };
-    console.log("contact: ", contact);
-
-    client
-      .create(contact)
-      .then(() => {
-        setLoading(false);
-        setIsFormSubmitted(true);
-      })
-      .catch((err) => {
-        setLoading(false);
-        console.log(err);
-        setIsFormSubmitted(true);
-      });
-  };
   return (
     <>
-      <h2 className="head-text">Contact me</h2>
+      <h2 className="head-text">
+        Get in <span>Touch</span>
+      </h2>
+      <div className={styles.app__footer__ptext}>
+        <p>
+          My inbox is always open. Whether you have a question or just want to
+          say hello, I'll try my best to get back to you! Feel free to mail me
+          about any relevant job updates.
+        </p>
+      </div>
       <div className={styles.app__footer_cards}>
         <div className={styles.app__footer_card}>
           <img src={images.email.src} alt="email" />
@@ -62,46 +35,36 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      {!isFormSubmitted ? (
-        <div className={`${styles.app__footer_form} app__flex`}>
-          <div className="app__flex">
-            <input
-              className="p-text"
-              type="text"
-              placeholder="Your Name"
-              name="username"
-              value={username}
-              onChange={handleChangeInput}
-            />
-          </div>
-          <div className="app__flex">
-            <input
-              className="p-text"
-              type="email"
-              placeholder="Your Email"
-              name="email"
-              value={email}
-              onChange={handleChangeInput}
-            />
+      <div className={styles.app__footer_bottom}>
+        <div className={styles.footer__social}>
+          <div>
+            <Link href={`https://twitter.com/ShasiniAbinash`}>
+              <BsTwitter />
+            </Link>
           </div>
           <div>
-            <textarea
-              className="p-text"
-              placeholder="Your Message"
-              value={message}
-              name="message"
-              onChange={handleChangeInput}
-            />
+            <Link href="https://www.facebook.com/abinash.shasini/">
+              <FaFacebookF />
+            </Link>
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>
-            {!loading ? "Send Message" : "Sending..."}
-          </button>
+          <div>
+            <Link href="https://www.linkedin.com/in/abinash-shasini/">
+              <BsLinkedin />
+            </Link>
+          </div>
+          <div>
+            <Link href="https://www.linkedin.com/in/abinash-shasini/">
+              <BsInstagram />
+            </Link>
+          </div>
+          <div>
+            <Link href="https://github.com/Abinashshasini">
+              <BsGithub />
+            </Link>
+          </div>
         </div>
-      ) : (
-        <div>
-          <h3 className="head-text2">🙏🏻 Thank you for getting in touch 😊</h3>
-        </div>
-      )}
+        <p>Designed & Built by JavaScript Mastery Rebuild by Abinash Shasini</p>
+      </div>
     </>
   );
 };
