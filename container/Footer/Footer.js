@@ -11,7 +11,7 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head_text">
         Get in <span>Touch</span>
       </h2>
       <div className={styles.app__footer__ptext}>
@@ -24,13 +24,21 @@ const Footer = () => {
       <div className={styles.app__footer_cards}>
         <div className={styles.app__footer_card}>
           <img src={images.email.src} alt="email" />
-          <a href="mailto:abinashshasini125@gmail.com" className="p-text">
+          <a
+            href="mailto:abinashshasini125@gmail.com"
+            className="p-text"
+            style={{ color: "var(--black-color)" }}
+          >
             abinashshasini125@gmail.com
           </a>
         </div>
         <div className={styles.app__footer_card}>
           <img src={images.mobile.src} alt="phone" />
-          <a href="tel:+91 7749012570" className="p-text">
+          <a
+            href="tel:+91 7749012570"
+            className="p-text"
+            style={{ color: "var(--black-color)" }}
+          >
             +91 7749012570
           </a>
         </div>

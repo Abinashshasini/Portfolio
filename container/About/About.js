@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head_text">
         All About <span>Me</span> 😊
       </h2>
       <div className={styles.app__aboout_container}>
@@ -46,7 +46,7 @@ const About = () => {
         </h2>
       </div>
       <div className={styles.head__wraper}>
-        <h2 className={styles.bold_text}>
+        <h2 className="bold-text">
           ➡️ Here is a list of the technologies that I'm familiar with!
         </h2>
       </div>
@@ -61,7 +61,7 @@ const About = () => {
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />
             <div>
-              <h2 className={styles.bold_text} style={{ marginTop: 20 }}>
+              <h2 className="bold-text" style={{ marginTop: 20 }}>
                 {about.title}
               </h2>
               <p className="p-text" style={{ marginTop: 10 }}>

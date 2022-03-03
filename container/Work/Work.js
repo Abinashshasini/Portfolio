@@ -104,7 +104,9 @@ const Work = () => {
               </motion.div>
             </div>
             <div className={styles.app__work_content}>
-              <h4 className="bold-text">{work.title}</h4>
+              <h4 className="bold-text" style={{ color: "var(--black-color)" }}>
+                {work.title}
+              </h4>
               <p className="p-text" style={{ marginTop: 10 }}>
                 {work.description}
               </p>
