@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 
 import { images } from "../../constants";
 import styles from "./Navbar.module.scss";
-import { BsTwitter, BsLinkedin, BsGithub } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
-import Link from "next/link";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -18,11 +15,8 @@ const Navbar = () => {
       </div>
       <ul className={styles.app__navbar_links}>
         {["home", "about", "work", "skills", "contact"].map((item) => (
-          <li
-            className={styles.app__navbar_links}
-            key={`link-${item}`}
-            className="p-text"
-          >
+          <li className="app__flex p-text" key={`link-${item}`}>
+            <div />
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}

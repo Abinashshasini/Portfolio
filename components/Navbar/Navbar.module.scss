@@ -1,10 +1,13 @@
 .app__navbar {
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.25);
+  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -19,9 +22,9 @@
 
   img {
     width: 90px;
-    height: 30px;
+    height: 20px;
 
-    @media screen and (min-width: 200px) {
+    @media screen and (min-width: 2000px) {
       width: 180px;
       height: 40px;
     }
@@ -29,25 +32,36 @@
 }
 
 .app__navbar_links {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+
   list-style: none;
 
   li {
     margin: 0 1rem;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     flex-direction: column;
+
+    div {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+      border-radius: 50%;
+
+      margin-bottom: 5px;
+    }
 
     a {
       color: var(--gray-color);
+      text-decoration: none;
       flex-direction: column;
+
       text-transform: uppercase;
       font-weight: 500;
+
       transition: all 0.3s ease-in-out;
 
       &:hover {
@@ -90,13 +104,17 @@
     bottom: 0;
     right: 0;
     z-index: 5;
+
     padding: 1rem;
+
     width: 80%;
     height: 100vh;
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
+
     background: url("../../assets/bgWhite.png");
     background-color: var(--white-color);
     background-size: cover;
@@ -142,10 +160,12 @@
         }
       }
     }
+
     @media screen and (min-width: 900px) {
       display: none;
     }
   }
+
   @media screen and (min-width: 900px) {
     display: none;
   }
