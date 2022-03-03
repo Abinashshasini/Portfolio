@@ -76,7 +76,7 @@
   margin-top: 3rem;
 
   h2 {
-    line-height: 1.7rem;
+    line-height: 1.5rem;
   }
 
   @media screen and (max-width: 900px) {
@@ -105,12 +105,25 @@
   flex: 1;
   margin: 0px 10px;
 
+  div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   img {
     width: 80px;
     height: 80px;
     border-radius: 10px;
     object-fit: cover;
     margin-right: 15px;
+  }
+
+  @media screen and (max-width: 900px) {
+    p {
+      font-size: 0.7rem;
+    }
   }
 
   @media screen and (min-width: 2000px) {
