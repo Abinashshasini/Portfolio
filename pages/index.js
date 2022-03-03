@@ -11,7 +11,7 @@ export default function Home() {
         <title>Abinash Shasini</title>
         <meta
           name="description"
-          content="Abinash shasini personal portfolio website"
+          content="Abinash shasini's personal portfolio website"
         />
         <link rel="icon" href="/a.png" />
       </Head>
