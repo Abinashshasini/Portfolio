@@ -30,28 +30,23 @@ const About = () => {
           <b>Hi</b> there. I'm Abinash Shasini. I'm an India based software
           developer with a goal-driven creative mindset and passion for learning
           and innovating. I specialise in creating beautiful, usable and
-          professional websites & mobile applications with best practice
-          accessibility and latest standards.Interestingly, I got introduced to
+          professional websites & mobile applications with best practice,
+          accessibility and latest standards. Interestingly, I got introduced to
           programming in my freshman year at{" "}
           <a href="https://silicon.ac.in/">Silicon Institute Of Technology</a>,
           Bhubaneswar where I completed my Bachelors in Computer Science and
           Engineering (2017-2021) with 80.1% aggregate. I'm currently working as
           a Frontend developer in{" "}
-          <a
-            ȟref="https://www.justdial.com/"
-            style={{
-              color: "#fe610c",
-            }}
-          >
-            {" "}
-            JustDial.com
-          </a>
-          . My responsibilty includes React.js/JavaScript based forntend
-          development. I'm also a colaborator in greate day to day problem
-          solving Technologies.
+          <a ȟref="https://www.justdial.com/"> JustDial.com</a>. My
+          responsibilty includes React & JS based forntend development. I'm also
+          a colaborator in greate day to day problem solving Technologies.
         </h2>
       </div>
-
+      <div className={styles.head__wraper}>
+        <h2 className={styles.bold_text}>
+          ➡️ Here is a list of the technologies that I'm familiar with!
+        </h2>
+      </div>
       <div className={styles.app__profiles}>
         {abouts.map((about, index) => (
           <motion.div
