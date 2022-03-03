@@ -63,7 +63,10 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <p>Designed & Built by JavaScript Mastery Rebuild by Abinash Shasini</p>
+        <p>
+          Designed by JavaScript Mastery Build by Abinash Shasini with Next.js
+          and 💕
+        </p>
       </div>
     </>
   );
