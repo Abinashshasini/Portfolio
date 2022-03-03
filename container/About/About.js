@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import styles from "./About.module.scss";
 import { client, urlFor } from "../../client";
 import { AppWrap, MotionWrap } from "../../wrapper";
+import images from "../../constants/images";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -12,6 +13,8 @@ const About = () => {
     const query = '*[_type == "abouts"]';
     client.fetch(query).then((data) => setAbouts(data));
   }, []);
+
+  console.log();
 
   return (
     <>
@@ -24,9 +27,9 @@ const About = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.5, type: "tween" }}
         >
-          <img src="https://unsplash.com/photos/DbsfpALaEhM/download?ixid=MnwxMjA3fDB8MXxhbGx8MTd8fHx8fHwyfHwxNjQ2Mjg3MjM3&force=true" />
+          <img src={images.profilenew.src} alt="second profile picture" />
         </motion.div>
-        <h2 className="p-text">
+        <h2 className="p-text" style={{ marginTop: 20 }}>
           <b>Hi</b> there. I'm Abinash Shasini. I'm an India based software
           developer with a goal-driven creative mindset and passion for learning
           and innovating. I specialise in creating beautiful, usable and
