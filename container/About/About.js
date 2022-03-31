@@ -29,7 +29,7 @@ const About = () => {
         >
           <img
             src={images.profilenew.src}
-            alt="second profile picture"
+            alt="Abinash Shaini"
             layout="fill"
             objectFit="contain"
           />

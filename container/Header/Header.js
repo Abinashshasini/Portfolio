@@ -46,9 +46,7 @@ const Header = () => (
     >
       <img
         src={images.profile.src}
-        alt="profile_bg"
-        layout="fill"
-        objectFit="contain"
+        alt="Abinash Shaini"
         style={{ backgroundImage: "LBPP}*od?utR^*t7XTWB00M{_4xu" }}
         loading="lazy"
       />
