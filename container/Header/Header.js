@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Header.module.scss";
 import { images } from "../../constants";
-// import { AppWrap } from "../../wrapper";
 import { AppWrap } from "../../wrapper";
+import Image from "next/image";
 
 const scaleVariants = {
   whileInView: {
@@ -47,7 +47,10 @@ const Header = () => (
       <img
         src={images.profile.src}
         alt="profile_bg"
-        placeholder="LBPP}*od?utR^*t7XTWB00M{_4xu"
+        layout="fill"
+        objectFit="contain"
+        style={{ backgroundImage: "LBPP}*od?utR^*t7XTWB00M{_4xu" }}
+        loading="lazy"
       />
       <motion.img
         whileInView={{ scale: [0, 1] }}

@@ -16,6 +16,7 @@ export default function Home() {
         />
         <link rel="icon" href="/a.png" />
         <link rel="preload" as="image" href={images.profile.src} />
+        <link rel="preload" as="image" href={images.profilenew.src} />
       </Head>
 
       <div className={styles.app}>

@@ -27,7 +27,12 @@ const About = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.5, type: "tween" }}
         >
-          <img src={images.profilenew.src} alt="second profile picture" />
+          <img
+            src={images.profilenew.src}
+            alt="second profile picture"
+            layout="fill"
+            objectFit="contain"
+          />
         </motion.div>
         <h2 className="p-text" style={{ marginTop: 20 }}>
           <b>Hi</b> there. I'm Abinash Shasini. I'm an India based software
