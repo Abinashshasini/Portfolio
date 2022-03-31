@@ -64,7 +64,7 @@ const Header = () => (
           className={[styles.circle_cmp, styles.app__flex]}
           key={`circle-${index}`}
         >
-          <img src={circle.src} alt="profile_bg" />
+          <img src={circle.src} alt="profile_bg" width="60%" height="60%" />
         </div>
       ))}
     </motion.div>
