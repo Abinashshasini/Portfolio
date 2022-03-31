@@ -44,7 +44,11 @@ const Header = () => (
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className={styles.app__header_img}
     >
-      <img src={images.profile.src} alt="profile_bg" />
+      <img
+        src={images.profile.src}
+        alt="profile_bg"
+        placeholder="LBPP}*od?utR^*t7XTWB00M{_4xu"
+      />
       <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: "easeInOut" }}
@@ -64,7 +68,14 @@ const Header = () => (
           className={[styles.circle_cmp, styles.app__flex]}
           key={`circle-${index}`}
         >
-          <img src={circle.src} alt="profile_bg" width="60%" height="60%" />
+          <img
+            src={circle.src}
+            alt={circle.src}
+            width="60%"
+            height="60%"
+            placeholder=""
+            placeholder="LBPP}*od?utR^*t7XTWB00M{_4xu"
+          />
         </div>
       ))}
     </motion.div>
